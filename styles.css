@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+html{
+    box-sizing: border-box;
+}
+*, *::before{
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -232,10 +239,10 @@ div.gallery-content p {
 }
 
 div.gallery-img {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
 }
 
 div.img {
@@ -344,4 +351,88 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+/* Responsiveness */
+@media screen and (max-width:750px){
+
+}
+@media screen and (max-width:749px){
+    div.logo{
+        display: block;
+        padding-right: 40px;
+    }
+    ul.nav-links{
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 18px
+    }
+    div.hero-section {
+        padding: 25px
+    }
+    div.hero-content-heading h3 {
+            font-size: 1.3rem;
+            letter-spacing: 0.7px
+    }
+    div.hero-background{
+        padding: 35px 65px
+    }
+    div.background {
+        height: 400px;
+        
+    }
+    div.hero-background-pos {
+        position:absolute;
+        top:60% ;
+        right: ;
+        left: 68%;
+        background: #fff;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    } 
+    div.snapshot-team{
+        padding: 20px
+    }
+
+    div.snapshot-box-content {
+    display: block;
+    justify-content: space-between;
+    }
+
+    div.box1 {
+    background: #fff;
+    padding: 10px 20px;
+    width: 190px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    div.box3 {
+    background: #304353;
+    padding: 10px 20px;
+    width: 190px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+
+    div.circle {
+    display: flex;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #bcc3c7;
+    margin-top: 2rem;
+    
+    }
+    div.footer {
+        padding-bottom: 30px;
+
+
+
+    
 }
